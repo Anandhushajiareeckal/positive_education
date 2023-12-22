@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from lmszai.zainikthemes.com/instructor by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Dec 2023 06:39:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="© 2021 LMSZAI. All Rights Reserved.">
+<meta name="robots" content="index, follow">
+<meta name="csrf-token" content="NqlSiZ5Sd5fmO9QFfBbIwEUXzu8rkMne8u9Mjk5V">
+<meta name="msapplication-TileImage" content="uploads_demo/setting/logo.png">
+<meta name="msapplication-TileColor" content="rgba(103, 20, 222,.55)">
+<meta name="theme-color" content="#754FFE">
+<meta name="description" content="Instructor List Page Meta Description">
+<meta name="keywords" content="Instructor List Page Meta Keywords">
+
+<meta property="og:type" content="Learning">
+<meta property="og:title" content="Instructor List">
+<meta property="og:description" content="Instructor List Page Meta Description">
+<meta property="og:image" content="uploads_demo/setting/logo.png">
+<meta property="og:url" content="instructor.html">
+<meta property="og:site_name" content="LMSZAI">
+
+<meta name="twitter:card" content="Learning">
+<meta name="twitter:title" content="Instructor List">
+<meta name="twitter:description" content="Instructor List Page Meta Description">
+<meta name="twitter:image" content="uploads_demo/setting/logo.png">
+<title>LMSZAI - Instructor</title>
+
+
+<link href="frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="frontend/assets/css/jquery-ui.min.css" rel="stylesheet">
+
+<link href="frontend/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="frontend/assets/fonts/feather/feather.css">
+
+<link rel="stylesheet" href="frontend/assets/css/animate.min.css">
+<link rel="stylesheet" href="frontend/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="frontend/assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="frontend/assets/css/venobox.min.css">
+
+<link rel="stylesheet" href="admin/sweetalert2/sweetalert2.css">
+
+<link href="frontend/assets/css/style.css" rel="stylesheet">
+<link href="frontend/assets/css/extra.css" rel="stylesheet">
+
+<link rel="stylesheet" href="frontend/assets/css/responsive.css">
+
+<link rel="icon" href="uploads_demo/setting/fav-icon.png" type="image/png" sizes="16x16">
+<link rel="shortcut icon" href="uploads_demo/setting/fav-icon.png" type="image/x-icon">
+<link rel="shortcut icon" href="uploads_demo/setting/fav-icon.png">
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="uploads_demo/setting/fav-icon.png" sizes="72x72">
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="uploads_demo/setting/fav-icon.png" sizes="114x114">
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="uploads_demo/setting/fav-icon.png" sizes="144x144">
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="uploads_demo/setting/fav-icon.png">
+
+<link rel="stylesheet" href="frontend/assets/vendor/datatable/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="frontend/assets/vendor/datatable/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="frontend/assets/vendor/datatable/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    .leaflet-popup-content {
+        padding: 0 !important;
+        width: 260px !important;
+    }
+</style>
+<link href="../api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet" />
+<link href="../api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css" rel="stylesheet" />
+<link href="../api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"> <style>
+    :root {
+        --white-color: #fff;
+        /* --theme-color: #5e3fd7; */
+        --light-purple: rgba(117, 79, 254, 0.1);
+        /* --heading-color: #040453; */
+        --orange-color: #FC8068;
+        --orange-deep: #FF3C16;
+        /* --para-color: #52526C; */
+        --gray-color: #767588;
+        --gray-color2: #929292;
+        --disable-color: #B5B4BD;
+        --color-green: #45C881;
+        --color-light-green: rgba(69, 200, 129, 0.22);
+        --color-yellow: #FFC014;
+        --light-bg: #F9F8F6;
+        --page-bg: #F8F6F0;
+        /* --plyr-color-main: #5e3fd7; */
+        --border-color: rgba(0, 0, 0, 0.07);
+        --border-color2: rgba(0, 0, 0, 0.09);
+        /* --font-jost: 'Jost', sans-serif; */
+
+                    --body-font-family: 'Jost', sans-serif;
+        
+                    --theme-color: #5e3fd7;
+            --plyr-color-main: #5e3fd7; /* --theme-color value set here*/
+            --heading-color: #040453;
+            --body-font-color: #52526C;
+            --navbar-bg-color: #030060;
+            --gradient-banner-bg: linear-gradient(130deg, #ad90c1 0%, rgb(3, 0, 84) 100%), linear-gradient(130deg, #09007b 0%, rgba(15, 0, 66, 0) 30%),
+            linear-gradient(129.96deg, rgb(255, 47, 47) 10.43%, rgb(0, 4, 96) 92.78%), radial-gradient(100% 246.94% at 100% 0%, rgb(255, 255, 255) 0%, rgba(37, 0, 66, 0.8) 100%),
+            linear-gradient(121.18deg, rgb(20, 0, 255) 0.45%, rgb(27, 0, 62) 100%), linear-gradient(154.03deg, rgb(206, 0, 0) 0%, rgb(255, 0, 61) 74.04%),
+            linear-gradient(341.1deg, rgb(178, 91, 186) 7.52%, rgb(16, 0, 119) 77.98%), linear-gradient(222.34deg, rgb(169, 0, 0) 12.99%, rgb(0, 255, 224) 87.21%),
+            linear-gradient(150.76deg, rgb(183, 213, 0) 15.35%, rgb(34, 0, 170) 89.57%);
+
+            --gradient-overlay-bg: linear-gradient(180deg, rgba(0, 0, 61, 0.27) 0%, rgba(1, 1, 52, 0.9) 100%);
+
+            --footer-gradient-bg: linear-gradient(130deg, #ad90c1 0%, rgb(3, 0, 84) 100%), linear-gradient(130deg, #09007b 0%, rgba(15, 0, 66, 0) 30%),
+            linear-gradient(129.96deg, rgb(255, 47, 47) 10.43%, rgb(0, 4, 96) 92.78%), radial-gradient(100% 246.94% at 100% 0%, rgb(255, 255, 255) 0%, rgba(37, 0, 66, 0.8) 100%),
+            linear-gradient(121.18deg, rgb(20, 0, 255) 0.45%, rgb(27, 0, 62) 100%), linear-gradient(154.03deg, rgb(206, 0, 0) 0%, rgb(255, 0, 61) 74.04%),
+            linear-gradient(341.1deg, rgb(178, 91, 186) 7.52%, rgb(16, 0, 119) 77.98%), linear-gradient(222.34deg, rgb(169, 0, 0) 12.99%, rgb(0, 255, 224) 87.21%),
+            linear-gradient(150.76deg, rgb(183, 213, 0) 15.35%, rgb(34, 0, 170) 89.57%);
+        }
+</style>
+
+<meta name="theme-color" content="#81008a" />
+<link rel="apple-touch-icon" href="uploads_demo/setting/fav-icon.png">
+<link rel="manifest" href="manifest.json">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8QQBS5DT2J"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-8QQBS5DT2J");
+    </script>
+</head>
+<body class="direction-ltr">
+
+<div id="preloader">
+<div id="preloader_status"><img src="uploads/setting/E5vAogRSNMEzM1Xyqqus.png" alt="img" /></div>
+</div>
+
+
+<section class="menu-section-area ">
+
+<nav class="navbar sticky-header navbar-expand-lg" id="mainNav">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html"><img src="uploads_demo/setting/logo.png" alt="Logo"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="main-menu-collapse collapse navbar-collapse" id="navbarSupportedContent">
+<div class="header-nav-left-side me-auto d-flex">
+<ul class="navbar-nav mb-2 mb-lg-0">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="librariesDropdown" data-bs-toggle="dropdown">
+Courses
+</a>
+<ul class="dropdown-menu ">
+<li>
+<a href="category/courses/development.html" class="dropdown-item  dropdown-toggle ">Development</a>
+<ul class="submenu dropdown-menu">
+<li><a class="dropdown-item" href="subcategory/courses/game-development.html">Game Development</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/apple.html">Apple</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/career-development.html">Career Development</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/communication.html">Communication</a></li>
+</ul>
+</li>
+<li>
+<a href="category/courses/business.html" class="dropdown-item  dropdown-toggle ">Business</a>
+<ul class="submenu dropdown-menu">
+<li><a class="dropdown-item" href="subcategory/courses/google.html">Google</a></li>
+</ul>
+</li>
+<li>
+<a href="category/courses/it-software.html" class="dropdown-item  dropdown-toggle ">IT &amp; Software</a>
+<ul class="submenu dropdown-menu">
+<li><a class="dropdown-item" href="subcategory/courses/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/creativity.html">Creativity</a></li>
+</ul>
+</li>
+<li>
+<a href="category/courses/design.html" class="dropdown-item  dropdown-toggle ">Design</a>
+<ul class="submenu dropdown-menu">
+<li><a class="dropdown-item" href="subcategory/courses/graphic-design.html">Graphic Design</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/game-design.html">Game Design</a></li>
+<li><a class="dropdown-item" href="subcategory/courses/fashion-design.html">Fashion Design</a></li>
+</ul>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li><a href="courses.html">All Courses</a></li>
+</ul>
+</li>
+</ul>
+<form action="#">
+<div class="input-group landing">
+<button class="input-group-text pe-0" id="basic-addon1"><img src="frontend/assets/img/icons-svg/search.svg" alt="Search"></button>
+<input class="form-control me-2 searchCourse" id="searchCourse" type="search" name="keyword" value placeholder="Search Course..." aria-label="Search">
+</div>
+
+<div class="search-bar-suggestion-box searchBox d-none custom-scrollbar">
+<ul class="appendCourseSearchList">
+</ul>
+</div>
+
+</form>
+</div>
+<div class="header-nav-right-side d-flex">
+<ul class="navbar-nav">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-bs-toggle="dropdown">Pages</a>
+<ul class="dropdown-menu ">
+<li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+<li><a class="dropdown-item" href="about-us.html">About</a></li>
+<li><a class="dropdown-item" href="contact-us.html">Contact</a></li>
+<li><a class="dropdown-item" href="support-ticket-faq.html">Support</a></li>
+<li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+<li><a class="dropdown-item" href="cookie-policy.html">Cookie Policy</a></li>
+<li><a class="dropdown-item" href="terms-conditions.html">Terms &amp; Conditions</a></li>
+<li><a class="dropdown-item" href="refund-policy.html">Refund Policy</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="forum.html">Forum</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="blogs.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" aria-current="page" href="contact-us.html">Contact</a>
+</li>
+<li class="nav-item dropdown menu-round-btn menu-language-btn dropdown-top-space">
+<a class="nav-link" href="#">
+<img src="index.html" alt="Flag" class="radius-50">
+</a>
+<ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+<li><a class="dropdown-item" href="instructor.html">
+<img src="uploads_demo/default/en.png" alt="Flag" class="radius-50">EN ( English )</a></li>
+<li><a class="dropdown-item" href="local/ar.html">
+<img src="uploads_demo/default/sa.png" alt="Flag" class="radius-50">AR (Arabic)</a></li>
+<li><a class="dropdown-item" href="instructor.html">
+<img src="index.html" alt="Flag" class="radius-50">Français</a></li>
+</ul>
+</li>
+
+<li class="nav-item menu-round-btn menu-cart-btn">
+<a class="nav-link menu-cart-btn" aria-current="page" href="login.html">
+<i data-feather="shopping-bag"></i>
+<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartQuantity">
+0
+</span>
+</a>
+</li>
+
+<li class="nav-item  menu-sign-in-btn">
+<a href="login.html" class="nav-link theme-button1" aria-current="page">Sign In</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+</section>
+
+
+<div class="bg-page">
+
+<header class="page-banner-header blank-page-banner-header gradient-bg position-relative">
+<div class="section-overlay">
+<div class="blank-page-banner-wrap banner-less-header-wrap p-0">
+</div>
+</div>
+</header>
+
+
+<section class="insturctor-search-map-area">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12 p-0">
+<div id="map" class="w-100"></div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="courses-page-area instructor-search-page-area">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<div class="courses-filter-bar instructors-filter-bar">
+<div class="row align-items-center">
+<div class="filter-bar-left col-sm-6 col-md-6 col-lg-6">
+<div class="filter-bar-left-top">Total Showing: 12</div>
+</div>
+<div class="filter-bar-right col-sm-6 col-md-6 col-lg-6 text-end">
+<div class="filter-box align-items-center justify-content-end">
+<div class="filter-box-short-icon color-gray font-15"><p>Sort By:</p></div>
+<select class="form-select form-select-sm filterSortBy" name="sort_by" onchange="filterData()">
+<option value selected>Default</option>
+<option value="asc">Newest</option>
+<option value="desc">Oldest</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="row shop-content">
+
+<div class="col-md-4 col-lg-3 col-xl-3">
+<div class="courses-sidebar-area bg-light">
+<div class="accordion" id="accordionPanelsStayOpenExample">
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingTen">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+Filter
+</button>
+</h2>
+<div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTen">
+<div class="accordion-body">
+<div class="sidebar-switch-item d-flex justify-content-between mb-2">
+<div class="switch-item-left-text">Available for meeting</div>
+<div class="radio-right-text mx-3">
+<div class="form-check form-switch">
+<input class="form-check-input" onchange="filterData()" type="checkbox" name="available_for_meeting" role="switch" id="flexSwitchCheckChecked1">
+</div>
+</div>
+</div>
+<div class="sidebar-switch-item d-flex justify-content-between mb-2">
+<div class="switch-item-left-text">Free Meeting</div>
+<div class="radio-right-text mx-3">
+<div class="form-check form-switch">
+<input class="form-check-input" onchange="filterData()" type="checkbox" name="free_meeting" role="switch" id="flexSwitchCheckChecked2">
+</div>
+</div>
+</div>
+<div class="sidebar-switch-item d-flex justify-content-between mb-2">
+<div class="switch-item-left-text">Discount</div>
+<div class="radio-right-text mx-3">
+<div class="form-check form-switch">
+<input class="form-check-input" onchange="filterData()" type="checkbox" name="discount_meeting" role="switch" id="flexSwitchCheckChecked3">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingOne">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+Categories
+</button>
+</h2>
+<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+<div class="accordion-body">
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="category_ids[]" onclick="filterData()" value="11" id="exampleRadios11">
+<label class="form-check-label" for="exampleRadios11">
+Business
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="category_ids[]" onclick="filterData()" value="13" id="exampleRadios13">
+<label class="form-check-label" for="exampleRadios13">
+Design
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="category_ids[]" onclick="filterData()" value="10" id="exampleRadios10">
+<label class="form-check-label" for="exampleRadios10">
+Development
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="category_ids[]" onclick="filterData()" value="12" id="exampleRadios12">
+<label class="form-check-label" for="exampleRadios12">
+IT &amp; Software
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingEight">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+Meeting Types
+</button>
+</h2>
+<div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingEight">
+<div class="accordion-body">
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="available_type" onclick="filterData()" id="exampleRadiosDifficulty9" value="3">
+<label class="form-check-label" for="exampleRadiosDifficulty9">
+All
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="available_type" onclick="filterData()" id="exampleRadiosDifficulty10" value="1">
+<label class="form-check-label" for="exampleRadiosDifficulty10">
+In person
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDifficultyLevel" type="checkbox" name="available_type" onclick="filterData()" id="exampleRadiosDifficulty11" value="2">
+<label class="form-check-label" for="exampleRadiosDifficulty11">
+Online
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+Rating
+</button>
+</h2>
+<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+<div class="accordion-body">
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterRating" type="checkbox" name="rating[]" onclick="filterData()" id="exampleRadios41" value="5">
+<label class="form-check-label" for="exampleRadios41">
+<span class="iconify" data-icon="bi:star-fill"></span>5 star
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterRating" type="checkbox" name="rating[]" onclick="filterData()" id="exampleRadios42" value="4">
+<label class="form-check-label" for="exampleRadios42">
+<span class="iconify" data-icon="bi:star-fill"></span>4 star or above
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterRating" type="checkbox" name="rating[]" onclick="filterData()" id="exampleRadios43" value="3">
+<label class="form-check-label" for="exampleRadios43">
+<span class="iconify" data-icon="bi:star-fill"></span>3 star or above
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterRating" type="checkbox" name="rating[]" onclick="filterData()" id="exampleRadios44" value="2">
+<label class="form-check-label" for="exampleRadios44">
+<span class="iconify" data-icon="bi:star-fill"></span>2 star or above
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterRating" type="checkbox" name="rating[]" onclick="filterData()" id="exampleRadios45" value="1">
+<label class="form-check-label" for="exampleRadios45">
+<span class="iconify" data-icon="bi:star-fill"></span>1 star or above
+</label>
+</div>
+<div class="radio-right-text"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingFour">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+Price
+</button>
+</h2>
+<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+<div class="accordion-body">
+<div id="slider-range-instructor" class="price-filter-range mt-0"></div>
+<div class="range-value-box">
+<div class="range-value-wrap"><label for="price-min">$Min:</label><input disabled type="number" min="0" value="0" id="price-min" name="price_min" class="price-range-field" /></div>
+<div class="range-value-wrap"><label for="price-max">$Max:</label><input disabled type="number" max="99" value="99" name="price_max" id="price-max" class="price-range-field" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingFive">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+Select Date
+</button>
+</h2>
+<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+<div class="accordion-body">
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration35" value="0">
+<label class="form-check-label" for="exampleRadiosDuration35">Sunday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration36" value="1">
+<label class="form-check-label" for="exampleRadiosDuration36">Monday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration37" value="2">
+<label class="form-check-label" for="exampleRadiosDuration37">Tuesday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration38" value="3">
+<label class="form-check-label" for="exampleRadiosDuration38">Wednesday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration39" value="4">
+<label class="form-check-label" for="exampleRadiosDuration39">Thursday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration40" value="5">
+<label class="form-check-label" for="exampleRadiosDuration40">Friday</label>
+</div>
+</div>
+<div class="sidebar-radio-item">
+<div class="form-check">
+<input class="form-check-input filterDuration" type="checkbox" name="consultation_day[]" onclick="filterData()" id="exampleRadiosDuration41" value="6">
+<label class="form-check-label" for="exampleRadiosDuration41">Saturday</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item course-sidebar-accordion-item">
+<h2 class="accordion-header course-sidebar-title" id="panelsStayOpen-headingNine">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+Select Location
+</button>
+</h2>
+<div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingNine">
+<div class="accordion-body">
+<div class="sidebar-select-item me-4 mb-3">
+<label>Country</label>
+<select class="form-select" onchange="filterData()" name="country">
+<option value selected>Select Country</option>
+<option value="1">Bangladesh</option>
+<option value="2">United States</option>
+<option value="3">United Kingdom</option>
+</select>
+</div>
+<div class="sidebar-select-item me-4 mb-3">
+<label>Province</label>
+<select class="form-select" onchange="filterData()" name="state">
+<option value selected>Select Province</option>
+<option value="1">Dhaka</option>
+<option value="2">Khulna</option>
+<option value="3">Comilla</option>
+<option value="4">California</option>
+<option value="5">Texas</option>
+<option value="6">Florida</option>
+<option value="7">Argyll</option>
+<option value="8">Belfast</option>
+<option value="9">Cambridge</option>
+</select>
+</div>
+<div class="sidebar-select-item me-4 mb-3">
+<label>City</label>
+<select class="form-select" onchange="filterData()" name="city">
+<option value selected>Select City</option>
+<option value="1">Dhanmondi</option>
+<option value="2">Bannai</option>
+<option value="3">Nirala</option>
+<option value="4">Zero Point</option>
+<option value="5">Tomchombridge</option>
+<option value="6">Cantonment</option>
+<option value="7">Acton</option>
+<option value="8">Alamo</option>
+<option value="9">Albin</option>
+<option value="10">Bartow</option>
+<option value="11">Oban</option>
+<option value="12">Holywood</option>
+<option value="13">Ely</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-8 col-lg-9 col-xl-9 show-all-course-area-wrap" id="instructorParentBlock">
+<div class="show-all-course-area show-all-instructors-area">
+
+<div id="loading" class="no-course-found text-center d-none">
+<div id="inner-status"><img src="frontend/assets/img/loader.svg" alt="img" /></div>
+</div>
+<div class="row courses-grids" id="instructorBlock">
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/2/profile.html">
+<img src="uploads_demo/user/1.jpg" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/2/profile.html">Johnny Depp</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+PHP Developer
+<span class="mx-2">||</span>Author Level 3</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">5.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 100%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(2)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_3.png" title="Author Level 3" alt="Author Level 3" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1">
+50/Hour
+</div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/2/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/4/profile.html">
+<img src="uploads_demo/user/2.jpg" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/4/profile.html">James Bond</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Python Developer
+<span class="mx-2">||</span>Author Level 2</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">0.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 0%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(0)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_2.png" title="Author Level 2" alt="Author Level 2" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1">
+66/Hour
+</div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/4/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/5/profile.html">
+<img src="uploads_demo/user/3.jpg" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/5/profile.html">Darrell Edwards</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+JavaScript Developer
+<span class="mx-2">||</span>Author Level 2</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">5.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 100%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(1)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_2.png" title="Author Level 2" alt="Author Level 2" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1">
+80/Hour
+</div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/5/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/6/profile.html">
+<img src="uploads_demo/user/4.jpg" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/6/profile.html">Jack Nicholson</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Nodejs Developer
+<span class="mx-2">||</span>Author Level 3</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">0.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 0%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(0)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_3.png" title="Author Level 3" alt="Author Level 3" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1">
+99/Hour
+</div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/6/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<span class="instructor-price-cutoff badge radius-3 font-12 font-medium position-absolute bg-orange">40%
+off</span>
+<div class="search-instructor-img-wrap mb-15"><a href="users/60/profile.html">
+<img src="uploads/user/1669903389-ARXS2mtKaM.jpg" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/60/profile.html">Benjamin Lucas</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Organization Owner
+<span class="mx-2">||</span>Author Level 1</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">5.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 100%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(1)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_1.png" title="Author Level 1" alt="Author Level 1" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1">
+3/Hour
+</div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+5.00</div>
+</div>
+<div class="w-100">
+<a href="users/60/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/61/profile.html">
+<img src="uploads/user/1669811654-raEFoRJ6sp.html" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/61/profile.html">Liam Noah</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Instructor
+<span class="mx-2">||</span>Author Level 1</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">0.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 0%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(0)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_1.png" title="Author Level 1" alt="Author Level 1" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1"></div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/61/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/62/profile.html">
+<img src="uploads/user/1669811792-5z3PTfGNQG.html" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/62/profile.html">Oliver Harry</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Instructor
+<span class="mx-2">||</span>Author Level 1</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">0.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 0%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(0)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_1.png" title="Author Level 1" alt="Author Level 1" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1"></div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/62/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 mt-0 mb-25">
+<div class="card instructor-item search-instructor-item position-relative text-center border-0 p-30 px-3">
+<div class="search-instructor-img-wrap mb-15"><a href="users/63/profile.html">
+<img src="uploads/user/1669812265-j512crpPkg.html" alt="instructor" class="fit-image rounded-circle"></a>
+</div>
+<div class="card-body p-0">
+<h6 class="card-title"><a href="users/63/profile.html">Elijah jaq</a>
+</h6>
+<p class="card-text instructor-designation font-medium mb-15">
+Instructor
+<span class="mx-2">||</span>Author Level 1</p>
+<div class="course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center">
+<span class="font-medium font-14 me-2">0.0</span>
+<div class="star-ratings">
+<div class="fill-ratings" style="width: 0%">
+<span>★★★★★</span>
+</div>
+<div class="empty-ratings">
+<span>★★★★★</span>
+</div>
+</div>
+<span class="rating-count font-14 ms-2">(0)</span>
+</div>
+<div class="search-instructor-bottom-item font-14 font-medium">
+<div class="search-instructor-award-img d-inline-flex flex-wrap justify-content-center">
+<img src="frontend/assets/img/ranking_badges/membership_1.png" title="1 Years of Membership" alt="1 Years of Membership" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/rank_1.png" title="Author Level 1" alt="Author Level 1" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/course_1.png" title="0 to 5 Course" alt="0 to 5 Course" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/student_1.png" title="0 to 10 Student" alt="0 to 10 Student" class="fit-image rounded-circle">
+<img src="frontend/assets/img/ranking_badges/sale_1.png" title="0 to 10 Sold" alt="0 to 10 Sold" class="fit-image rounded-circle">
+</div>
+</div>
+<div class="search-instructor-price d-inline-flex align-items-center mb-15">
+<div class="search-instructor-new-price font-medium mx-1"></div>
+<div class="search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1">
+</div>
+</div>
+<div class="w-100">
+<a href="users/63/profile.html" class="green-theme-btn theme-button1 w-100">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+</div>
+
+
+<footer class="footer-area footer-gradient-bg position-relative">
+<div class="section-overlay">
+<div class="container">
+
+<div class="row footer-top-part section-p-t-b-90">
+<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+<div class="footer-widget footer-about">
+<img src="uploads_demo/setting/logo.png" alt="Logo">
+<p>Mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present</p>
+<div class="footer-social mt-30">
+<ul class="d-flex align-items-center">
+<li><a href="#"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a></li>
+<li><a href="#"><span class="iconify" data-icon="ant-design:twitter-square-filled"></span></a></li>
+<li><a href="#"><span class="iconify" data-icon="ant-design:linkedin-filled"></span></a></li>
+<li><a href="#"><span class="iconify" data-icon="fa-brands:pinterest-square" data-width="1em" data-height="1em"></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-2 offset-lg-2">
+<div class="footer-widget">
+<h6 class="footer-widget-title">Company</h6>
+<div class="footer-links d-flex">
+<ul>
+<li><a href="about-us.html">About</a></li>
+<li><a href="faq.html">FQA</a></li>
+<li><a href="blogs.html">Blogs</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-2">
+<div class="footer-widget">
+<h6 class="footer-widget-title">Support</h6>
+<div class="footer-links d-flex">
+<ul>
+<li><a href="contact-us.html">Contact</a>
+</li>
+<li><a href="support-ticket-faq.html">Support</a>
+</li>
+<li><a href="courses.html">Courses</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+<div class="footer-widget footer-contact-info">
+<h6 class="footer-widget-title">Contact Info</h6>
+<div class="footer-links d-flex">
+<ul>
+<li><span class="iconify" data-icon="carbon:location-filled"></span><span>45/7 dreem street, albania dnobod, USA</span>
+</li>
+<li><span class="iconify" data-icon="fluent-emoji-high-contrast:telephone-receiver"></span><a href="tel:(123-458-987254824185)">(123-458-987254824185)</a>
+</li>
+<li><span class="iconify" data-icon="ic:round-email"></span><a href="cdn-cgi/l/email-protection.html#5337363e3c133e323a3f7d303c3e"><span class="__cf_email__" data-cfemail="c6a2a3aba986aba7afaae8a5a9ab">[email&#160;protected]</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row copyright-wrapper">
+<div class="col-12 col-md-12 col-lg-4">
+<div class="footer-payment">
+<img src="frontend/assets/img/payment-cards.png" alt="payments">
+</div>
+</div>
+<div class="col-12 col-md-12 col-lg-4">
+<div class="copyright-text text-center">
+<p class="text-white font-13">© 2021 LMSZAI. All Rights Reserved.</p>
+</div>
+</div>
+<div class="col-12 col-md-12 col-lg-4 pe-lg-0">
+<div class="footer-bottom-nav">
+<ul class="d-flex justify-content-end">
+<li><a href="instructor.html">Instructor</a></li>
+<li><a href="login.html">Become Instructor</a>
+</li>
+<li><a href="verify-certificate.html">Verify Certificate</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<button class="d-none pwa-install-btn bg-white position-fixed radius-4" id="installApp">
+<span class="iconify" data-icon="logos:pwa"></span>
+</button>
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    var deleteTitle = 'Sure! You want to delete?';
+    var deleteText = 'You wont be able to revert this!';
+    var deleteConfirmButton = 'Yes, Delete It!';
+    var deleteSuccessText = 'Item has been deleted';
+</script>
+
+
+<script src="frontend/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+<script src="frontend/assets/vendor/jquery/popper.min.js"></script>
+<script src="frontend/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="frontend/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="frontend/assets/js/jquery-ui.min.js"></script>
+
+<script src="frontend/assets/js/waypoints.min.js"></script>
+
+<script src="frontend/assets/js/jquery.counterup.min.js"></script>
+<script src="frontend/assets/js/owl.carousel.min.js"></script>
+
+<script src="frontend/assets/js/price_range_script.js"></script>
+
+<script src="frontend/assets/js/feather.min.js"></script>
+
+<script src="common/js/iconify.min.js"></script>
+
+<script src="frontend/assets/js/venobox.min.js"></script>
+
+<script src="frontend/assets/js/menu.js"></script>
+
+<script src="frontend/assets/js/frontend-custom.js"></script>
+<script src="admin/sweetalert2/sweetalert2.all.js"></script>
+<input type="hidden" id="base_url" value="https://lmszai.zainikthemes.com">
+
+<input type="hidden" class="search_route" value="https://lmszai.zainikthemes.com/search-course-list">
+<script src="frontend/assets/js/custom/search-course.js"></script>
+
+<script>
+    function getLanguage(){
+        return {
+            "sEmptyTable": "No data available in table",
+            "sInfo": "Showing _START_ To _END_ Of _TOTAL_ Entries",
+            "sInfoEmpty": "Showing 0 to 0 of 0 entries",
+            "sInfoFiltered": "(filtered from _MAX_ total entries)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ",",
+            "sLengthMenu": "Show _MENU_ entries",
+            "sLoadingRecords": "Loading...",
+            "sProcessing": "Processing...",
+            "sSearch": "Search:",
+            "sZeroRecords": "No matching records found",
+            "oPaginate": {
+                "sFirst": "First",
+                "sLast": "Last",
+                "sNext": "Next",
+                "sPrevious": "Previous"
+            },
+            "oAria": {
+                "sSortAscending": ": activate to sort column ascending",
+                "sSortDescending": ": activate to sort column descending"
+            }
+        };
+    }
+</script>
+
+<script src="frontend/assets/vendor/datatable/datatables/jquery.dataTables.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="frontend/assets/vendor/datatable/jszip/jszip.min.js"></script>
+<script src="frontend/assets/vendor/datatable/pdfmake/pdfmake.min.js"></script>
+<script src="frontend/assets/vendor/datatable/pdfmake/vfs_fonts.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="frontend/assets/vendor/datatable/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="../api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+<script src="../api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js"></script>
+<script>
+    const paginateRoute = "instructor-more.json";
+    const filterRoute = "filter-instructor.json";
+    const maxPrice = "99";
+    const mapData =  [{"coordinates":{"long":"89.52832360","lat":"22.79785324"},"properties":{"image":"https:\/\/lmszai.zainikthemes.com\/uploads_demo\/user\/1.jpg","name":"Johnny Depp","popup":"\u003Cdiv class=\u0022card instructor-item search-instructor-item position-relative text-center border-0 p-20 px-3\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-img-wrap mb-15\u0022\u003E\u003Ca\n            href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/2\/profile\u0022\u003E\n            \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/uploads_demo\/user\/1.jpg\u0022 alt=\u0022instructor\u0022\n                class=\u0022fit-image rounded-circle\u0022\u003E\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022card-body p-0\u0022\u003E\n        \u003Ch6 class=\u0022card-title\u0022\u003E\u003Ca href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/2\/profile\u0022\u003EJohnny Depp\u003C\/a\u003E\n        \u003C\/h6\u003E\n        \u003Cp class=\u0022card-text instructor-designation font-medium mb-15\u0022\u003E\n            PHP Developer\n            \u003Cspan class=\u0022mx-2\u0022\u003E||\u003C\/span\u003EAuthor Level 3\u003C\/p\u003E\n                \u003Cdiv\n            class=\u0022course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center\u0022\u003E\n            \u003Cspan class=\u0022font-medium font-14 me-2\u0022\u003E5.0\u003C\/span\u003E\n            \u003Cdiv class=\u0022star-ratings\u0022\u003E\n                \u003Cdiv class=\u0022fill-ratings\u0022 style=\u0022width: 100%\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n                \u003Cdiv class=\u0022empty-ratings\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n            \u003C\/div\u003E\n            \u003Cspan class=\u0022rating-count font-14 ms-2\u0022\u003E(2)\u003C\/span\u003E\n        \u003C\/div\u003E\n        \u003Cdiv class=\u0022search-instructor-bottom-item font-14 font-medium\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-award-img d-inline-flex flex-wrap justify-content-center\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/membership_1.png\u0022 title=\u00221 Years of Membership\u0022 alt=\u00221 Years of Membership\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/rank_3.png\u0022 title=\u0022Author Level 3\u0022 alt=\u0022Author Level 3\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/course_1.png\u0022 title=\u00220 to 5 Course\u0022 alt=\u00220 to 5 Course\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/student_1.png\u0022 title=\u00220 to 10 Student\u0022 alt=\u00220 to 10 Student\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/sale_1.png\u0022 title=\u00220 to 10 Sold\u0022 alt=\u00220 to 10 Sold\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                            \u003C\/div\u003E\n        \u003C\/div\u003E\n\n        \u003Cdiv class=\u0022search-instructor-price d-inline-flex align-items-center mb-15\u0022\u003E\n                                            \u003Cdiv class=\u0022search-instructor-new-price font-medium mx-1\u0022\u003E\n                    50\/Hour\n                \u003C\/div\u003E\n                \u003Cdiv\n                    class=\u0022search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1\u0022\u003E\n                \u003C\/div\u003E\n                                    \u003C\/div\u003E\n        \u003Cdiv class=\u0022w-100\u0022\u003E\n                        \u003Ca target=_blank href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/2\/profile\u0022\n                class=\u0022green-theme-btn theme-button1 w-100\u0022\u003EView Profile\u003C\/a\u003E\n                    \u003C\/div\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n"}},{"coordinates":{"long":"-122.03218400","lat":"37.85020300"},"properties":{"image":"https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669903389-ARXS2mtKaM.jpg","name":"Benjamin Lucas","popup":"\u003Cdiv class=\u0022card instructor-item search-instructor-item position-relative text-center border-0 p-20 px-3\u0022\u003E\n            \u003Cspan class=\u0022instructor-price-cutoff badge radius-3 font-12 font-medium position-absolute bg-orange\u0022\u003E40%\n        off\u003C\/span\u003E\n        \u003Cdiv class=\u0022search-instructor-img-wrap mb-15\u0022\u003E\u003Ca\n            href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/60\/profile\u0022\u003E\n            \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669903389-ARXS2mtKaM.jpg\u0022 alt=\u0022instructor\u0022\n                class=\u0022fit-image rounded-circle\u0022\u003E\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022card-body p-0\u0022\u003E\n        \u003Ch6 class=\u0022card-title\u0022\u003E\u003Ca href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/60\/profile\u0022\u003EBenjamin Lucas\u003C\/a\u003E\n        \u003C\/h6\u003E\n        \u003Cp class=\u0022card-text instructor-designation font-medium mb-15\u0022\u003E\n            Organization Owner\n            \u003Cspan class=\u0022mx-2\u0022\u003E||\u003C\/span\u003EAuthor Level 1\u003C\/p\u003E\n                \u003Cdiv\n            class=\u0022course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center\u0022\u003E\n            \u003Cspan class=\u0022font-medium font-14 me-2\u0022\u003E5.0\u003C\/span\u003E\n            \u003Cdiv class=\u0022star-ratings\u0022\u003E\n                \u003Cdiv class=\u0022fill-ratings\u0022 style=\u0022width: 100%\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n                \u003Cdiv class=\u0022empty-ratings\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n            \u003C\/div\u003E\n            \u003Cspan class=\u0022rating-count font-14 ms-2\u0022\u003E(1)\u003C\/span\u003E\n        \u003C\/div\u003E\n        \u003Cdiv class=\u0022search-instructor-bottom-item font-14 font-medium\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-award-img d-inline-flex flex-wrap justify-content-center\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/membership_1.png\u0022 title=\u00221 Years of Membership\u0022 alt=\u00221 Years of Membership\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/rank_1.png\u0022 title=\u0022Author Level 1\u0022 alt=\u0022Author Level 1\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/course_1.png\u0022 title=\u00220 to 5 Course\u0022 alt=\u00220 to 5 Course\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/student_1.png\u0022 title=\u00220 to 10 Student\u0022 alt=\u00220 to 10 Student\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/sale_1.png\u0022 title=\u00220 to 10 Sold\u0022 alt=\u00220 to 10 Sold\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                            \u003C\/div\u003E\n        \u003C\/div\u003E\n\n        \u003Cdiv class=\u0022search-instructor-price d-inline-flex align-items-center mb-15\u0022\u003E\n                                            \u003Cdiv class=\u0022search-instructor-new-price font-medium mx-1\u0022\u003E\n                    3\/Hour\n                \u003C\/div\u003E\n                \u003Cdiv\n                    class=\u0022search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1\u0022\u003E\n                    5.00\u003C\/div\u003E\n                                    \u003C\/div\u003E\n        \u003Cdiv class=\u0022w-100\u0022\u003E\n                        \u003Ca target=_blank href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/60\/profile\u0022\n                class=\u0022green-theme-btn theme-button1 w-100\u0022\u003EView Profile\u003C\/a\u003E\n                    \u003C\/div\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n"}},{"coordinates":{"long":"-81.73375045","lat":"28.55407581"},"properties":{"image":"https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669811654-raEFoRJ6sp.png","name":"Liam Noah","popup":"\u003Cdiv class=\u0022card instructor-item search-instructor-item position-relative text-center border-0 p-20 px-3\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-img-wrap mb-15\u0022\u003E\u003Ca\n            href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/61\/profile\u0022\u003E\n            \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669811654-raEFoRJ6sp.png\u0022 alt=\u0022instructor\u0022\n                class=\u0022fit-image rounded-circle\u0022\u003E\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022card-body p-0\u0022\u003E\n        \u003Ch6 class=\u0022card-title\u0022\u003E\u003Ca href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/61\/profile\u0022\u003ELiam Noah\u003C\/a\u003E\n        \u003C\/h6\u003E\n        \u003Cp class=\u0022card-text instructor-designation font-medium mb-15\u0022\u003E\n            Instructor\n            \u003Cspan class=\u0022mx-2\u0022\u003E||\u003C\/span\u003EAuthor Level 1\u003C\/p\u003E\n                \u003Cdiv\n            class=\u0022course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center\u0022\u003E\n            \u003Cspan class=\u0022font-medium font-14 me-2\u0022\u003E0.0\u003C\/span\u003E\n            \u003Cdiv class=\u0022star-ratings\u0022\u003E\n                \u003Cdiv class=\u0022fill-ratings\u0022 style=\u0022width: 0%\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n                \u003Cdiv class=\u0022empty-ratings\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n            \u003C\/div\u003E\n            \u003Cspan class=\u0022rating-count font-14 ms-2\u0022\u003E(0)\u003C\/span\u003E\n        \u003C\/div\u003E\n        \u003Cdiv class=\u0022search-instructor-bottom-item font-14 font-medium\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-award-img d-inline-flex flex-wrap justify-content-center\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/membership_1.png\u0022 title=\u00221 Years of Membership\u0022 alt=\u00221 Years of Membership\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/rank_1.png\u0022 title=\u0022Author Level 1\u0022 alt=\u0022Author Level 1\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/course_1.png\u0022 title=\u00220 to 5 Course\u0022 alt=\u00220 to 5 Course\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/student_1.png\u0022 title=\u00220 to 10 Student\u0022 alt=\u00220 to 10 Student\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/sale_1.png\u0022 title=\u00220 to 10 Sold\u0022 alt=\u00220 to 10 Sold\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                            \u003C\/div\u003E\n        \u003C\/div\u003E\n\n        \u003Cdiv class=\u0022search-instructor-price d-inline-flex align-items-center mb-15\u0022\u003E\n                        \u003Cdiv class=\u0022search-instructor-new-price font-medium mx-1\u0022\u003E\u003C\/div\u003E\n            \u003Cdiv\n                class=\u0022search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1\u0022\u003E\n            \u003C\/div\u003E\n                    \u003C\/div\u003E\n        \u003Cdiv class=\u0022w-100\u0022\u003E\n                        \u003Ca target=_blank href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/61\/profile\u0022\n                class=\u0022green-theme-btn theme-button1 w-100\u0022\u003EView Profile\u003C\/a\u003E\n                    \u003C\/div\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n"}},{"coordinates":{"long":"-5.47228579","lat":"56.41625395"},"properties":{"image":"https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669811792-5z3PTfGNQG.jpg","name":"Oliver Harry","popup":"\u003Cdiv class=\u0022card instructor-item search-instructor-item position-relative text-center border-0 p-20 px-3\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-img-wrap mb-15\u0022\u003E\u003Ca\n            href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/62\/profile\u0022\u003E\n            \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669811792-5z3PTfGNQG.jpg\u0022 alt=\u0022instructor\u0022\n                class=\u0022fit-image rounded-circle\u0022\u003E\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022card-body p-0\u0022\u003E\n        \u003Ch6 class=\u0022card-title\u0022\u003E\u003Ca href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/62\/profile\u0022\u003EOliver Harry\u003C\/a\u003E\n        \u003C\/h6\u003E\n        \u003Cp class=\u0022card-text instructor-designation font-medium mb-15\u0022\u003E\n            Instructor\n            \u003Cspan class=\u0022mx-2\u0022\u003E||\u003C\/span\u003EAuthor Level 1\u003C\/p\u003E\n                \u003Cdiv\n            class=\u0022course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center\u0022\u003E\n            \u003Cspan class=\u0022font-medium font-14 me-2\u0022\u003E0.0\u003C\/span\u003E\n            \u003Cdiv class=\u0022star-ratings\u0022\u003E\n                \u003Cdiv class=\u0022fill-ratings\u0022 style=\u0022width: 0%\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n                \u003Cdiv class=\u0022empty-ratings\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n            \u003C\/div\u003E\n            \u003Cspan class=\u0022rating-count font-14 ms-2\u0022\u003E(0)\u003C\/span\u003E\n        \u003C\/div\u003E\n        \u003Cdiv class=\u0022search-instructor-bottom-item font-14 font-medium\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-award-img d-inline-flex flex-wrap justify-content-center\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/membership_1.png\u0022 title=\u00221 Years of Membership\u0022 alt=\u00221 Years of Membership\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/rank_1.png\u0022 title=\u0022Author Level 1\u0022 alt=\u0022Author Level 1\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/course_1.png\u0022 title=\u00220 to 5 Course\u0022 alt=\u00220 to 5 Course\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/student_1.png\u0022 title=\u00220 to 10 Student\u0022 alt=\u00220 to 10 Student\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/sale_1.png\u0022 title=\u00220 to 10 Sold\u0022 alt=\u00220 to 10 Sold\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                            \u003C\/div\u003E\n        \u003C\/div\u003E\n\n        \u003Cdiv class=\u0022search-instructor-price d-inline-flex align-items-center mb-15\u0022\u003E\n                        \u003Cdiv class=\u0022search-instructor-new-price font-medium mx-1\u0022\u003E\u003C\/div\u003E\n            \u003Cdiv\n                class=\u0022search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1\u0022\u003E\n            \u003C\/div\u003E\n                    \u003C\/div\u003E\n        \u003Cdiv class=\u0022w-100\u0022\u003E\n                        \u003Ca target=_blank href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/62\/profile\u0022\n                class=\u0022green-theme-btn theme-button1 w-100\u0022\u003EView Profile\u003C\/a\u003E\n                    \u003C\/div\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n"}},{"coordinates":{"long":"-6.04841285","lat":"54.50705542"},"properties":{"image":"https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669812265-j512crpPkg.jpg","name":"Elijah jaq","popup":"\u003Cdiv class=\u0022card instructor-item search-instructor-item position-relative text-center border-0 p-20 px-3\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-img-wrap mb-15\u0022\u003E\u003Ca\n            href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/63\/profile\u0022\u003E\n            \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/uploads\/user\/1669812265-j512crpPkg.jpg\u0022 alt=\u0022instructor\u0022\n                class=\u0022fit-image rounded-circle\u0022\u003E\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022card-body p-0\u0022\u003E\n        \u003Ch6 class=\u0022card-title\u0022\u003E\u003Ca href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/63\/profile\u0022\u003EElijah jaq\u003C\/a\u003E\n        \u003C\/h6\u003E\n        \u003Cp class=\u0022card-text instructor-designation font-medium mb-15\u0022\u003E\n            Instructor\n            \u003Cspan class=\u0022mx-2\u0022\u003E||\u003C\/span\u003EAuthor Level 1\u003C\/p\u003E\n                \u003Cdiv\n            class=\u0022course-rating search-instructor-rating w-100 mb-15 d-inline-flex align-items-center justify-content-center\u0022\u003E\n            \u003Cspan class=\u0022font-medium font-14 me-2\u0022\u003E0.0\u003C\/span\u003E\n            \u003Cdiv class=\u0022star-ratings\u0022\u003E\n                \u003Cdiv class=\u0022fill-ratings\u0022 style=\u0022width: 0%\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n                \u003Cdiv class=\u0022empty-ratings\u0022\u003E\n                    \u003Cspan\u003E\u2605\u2605\u2605\u2605\u2605\u003C\/span\u003E\n                \u003C\/div\u003E\n            \u003C\/div\u003E\n            \u003Cspan class=\u0022rating-count font-14 ms-2\u0022\u003E(0)\u003C\/span\u003E\n        \u003C\/div\u003E\n        \u003Cdiv class=\u0022search-instructor-bottom-item font-14 font-medium\u0022\u003E\n            \u003Cdiv class=\u0022search-instructor-award-img d-inline-flex flex-wrap justify-content-center\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/membership_1.png\u0022 title=\u00221 Years of Membership\u0022 alt=\u00221 Years of Membership\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/rank_1.png\u0022 title=\u0022Author Level 1\u0022 alt=\u0022Author Level 1\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/course_1.png\u0022 title=\u00220 to 5 Course\u0022 alt=\u00220 to 5 Course\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/student_1.png\u0022 title=\u00220 to 10 Student\u0022 alt=\u00220 to 10 Student\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                                \u003Cimg src=\u0022https:\/\/lmszai.zainikthemes.com\/frontend\/assets\/img\/ranking_badges\/sale_1.png\u0022 title=\u00220 to 10 Sold\u0022 alt=\u00220 to 10 Sold\u0022\n                    class=\u0022fit-image rounded-circle\u0022\u003E\n                            \u003C\/div\u003E\n        \u003C\/div\u003E\n\n        \u003Cdiv class=\u0022search-instructor-price d-inline-flex align-items-center mb-15\u0022\u003E\n                        \u003Cdiv class=\u0022search-instructor-new-price font-medium mx-1\u0022\u003E\u003C\/div\u003E\n            \u003Cdiv\n                class=\u0022search-instructor-old-price text-decoration-line-through color-gray font-13 font-medium mx-1\u0022\u003E\n            \u003C\/div\u003E\n                    \u003C\/div\u003E\n        \u003Cdiv class=\u0022w-100\u0022\u003E\n                        \u003Ca target=_blank href=\u0022https:\/\/lmszai.zainikthemes.com\/users\/63\/profile\u0022\n                class=\u0022green-theme-btn theme-button1 w-100\u0022\u003EView Profile\u003C\/a\u003E\n                    \u003C\/div\u003E\n    \u003C\/div\u003E\n\u003C\/div\u003E\n"}}];
+    L.mapbox.accessToken = "pk.eyJ1Ijoic2FkZWt1cmljdCIsImEiOiJjbGE4NXo1bGkwMG55M3VwZWJib2drODFoIn0.mvPqQbnkh6B1V0928bnG_g";
+</script>
+<script src="frontend/assets/js/custom/instructor-filter.js"></script>
+<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script><script type="text/javascript">toastr.options = {"closeButton":true,"closeClass":"toast-close-button","closeDuration":300,"closeEasing":"swing","closeHtml":"<button><i class=\"icon-off\"><\/i><\/button>","closeMethod":"fadeOut","closeOnHover":true,"containerId":"toast-container","debug":false,"escapeHtml":false,"extendedTimeOut":10000,"hideDuration":1000,"hideEasing":"linear","hideMethod":"fadeOut","iconClass":"toast-info","iconClasses":{"error":"toast-error","info":"toast-info","success":"toast-success","warning":"toast-warning"},"messageClass":"toast-message","newestOnTop":false,"onHidden":null,"onShown":null,"positionClass":"toast-top-right","preventDuplicates":true,"progressBar":true,"progressClass":"toast-progress","rtl":false,"showDuration":300,"showEasing":"swing","showMethod":"fadeIn","tapToDismiss":true,"target":"body","timeOut":5000,"titleClass":"toast-title","toastClass":"toast"};</script>
+<script src="sw.js"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        $('#installApp').removeClass('d-none');
+        deferredPrompt = e;
+    });
+
+    const installApp = document.getElementById('installApp');
+    installApp.addEventListener('click', async () => {
+        if (deferredPrompt !== null) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                deferredPrompt = null;
+            }
+        }
+    });
+
+</script>
+</body>
+
+<!-- Mirrored from lmszai.zainikthemes.com/instructor by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Dec 2023 06:39:30 GMT -->
+</html>
